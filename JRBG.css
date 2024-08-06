@@ -64,6 +64,9 @@
     color: #F90164;
   }
 
+
+
+
  
 
   ul {
@@ -164,6 +167,18 @@
     transform: scale(1.1);
   }
 
+  .git a {
+    color: black;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  /* Scale up the icon slightly and change the cursor to pointer on hover */
+  .git a:hover {
+    transform: scale(1.1);
+    color: #F90164;
+  }
+
   .summary{
     font-size: 12px;
   }
@@ -179,3 +194,78 @@
     /* Black color for the horizontal line */
     box-shadow: #343a40;
   }
+
+  .card-color{
+    border-radius: 5%;
+    background-color: #333333;
+    
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure navbar is always on top */
+    transition: top 0.5s;
+  }
+
+  .navbar-transparent {
+    background-color: rgba(200, 234, 179, 0);
+  }
+
+  .navbar-hidden {
+    top: -80px; /* Adjust based on your navbar height */
+  }
+
+  .navbar:hover {
+    top: 0;
+  }
+    
+  .donwload{
+    background-color: rgba(200, 234, 179, 0);
+    border-color:#F90164;
+  }
+
+  .donwload:hover{
+    background-color: rgba(200, 234, 179, 0);
+  }
+
+
+
+   
+    .fade-in {
+      opacity: 1; /* Fully visible when in viewport */
+    }
+
+ 
+    .card-color {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    /* Hover scroll down effect */
+    .hover-scroll::before {
+      content: '↓';
+      font-size: 24px;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s, bottom 0.3s;
+    }
+
+    .hover-scroll:hover::before {
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    .hover-scroll {
+      cursor: pointer;
+    }
