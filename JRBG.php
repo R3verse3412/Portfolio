@@ -365,9 +365,6 @@
       <p class="text-white radius-1"> MySQL</p>  
       </div>
       <div class="col-md-auto d-flex justify-content-start align-items-center">
-      <p class="text-white radius-2"> DataTables</p>  
-      </div>
-      <div class="col-md-auto d-flex justify-content-start align-items-center">
           <p class="text-white radius-1">PHP</p>
       </div>
       </div>
@@ -492,9 +489,6 @@
       <p class="text-white radius-4">MySQL</p>
       </div>
       <div class="col-md-auto d-flex justify-content-start">
-      <p class="text-white radius-3"> DataTables</p>
-      </div>
-      <div class="col-md-auto d-flex justify-content-start">
       <p class="text-white radius-4"> PHP</p>
       </div>
       </div>
@@ -506,89 +500,65 @@
     </div>
     <div class="row mb-5">
     <div class="col-md-8 px-0 krampus">
-      <div id="workcid" class="carousel slide" data-ride="carousel">
+      <div id="workrecord" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#workcid" data-slide-to="0" class="active"></li>
-        <li data-target="#workcid" data-slide-to="1"></li>
-        <li data-target="#workcid" data-slide-to="2"></li>
-        <li data-target="#workcid" data-slide-to="3"></li>
-        <li data-target="#workcid" data-slide-to="4"></li>
-        <li data-target="#workcid" data-slide-to="5"></li>
-        <li data-target="#workcid" data-slide-to="6"></li>
-        <li data-target="#workcid" data-slide-to="7"></li>
-        <li data-target="#workcid" data-slide-to="8"></li>
-        <li data-target="#workcid" data-slide-to="9"></li>
-        <li data-target="#workcid" data-slide-to="10"></li>
-        <li data-target="#workcid" data-slide-to="11"></li>
-        <li data-target="#workcid" data-slide-to="12"></li>
-        <li data-target="#workcid" data-slide-to="13"></li>
-        <li data-target="#workcid" data-slide-to="14"></li>
-        <li data-target="#workcid" data-slide-to="15"></li>
-        <li data-target="#workcid" data-slide-to="16"></li>
-        <li data-target="#workcid" data-slide-to="17"></li>
+        <li data-target="#workrecord" data-slide-to="0" class="active"></li>
+        <li data-target="#workrecord" data-slide-to="1"></li>
+        <li data-target="#workrecord" data-slide-to="2"></li>
+        <li data-target="#workrecord" data-slide-to="3"></li>
+        <li data-target="#workrecord" data-slide-to="4"></li>
+        <li data-target="#workrecord" data-slide-to="5"></li>
+        <li data-target="#workrecord" data-slide-to="6"></li>
+        <li data-target="#workrecord" data-slide-to="7"></li>
+        <li data-target="#workrecord" data-slide-to="8"></li>
+        <li data-target="#workrecord" data-slide-to="9"></li>
+        <li data-target="#workrecord" data-slide-to="10"></li>
+        <li data-target="#workrecord" data-slide-to="11"></li>
     </ol>
         <div class="carousel-inner">
         <div class="carousel-item active">
-        <img class="d-block w-100" id="carouselworkprogress" src="img/CID.png" alt="First slide">
+        <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100"  id="carouselworkprogress" src="img/CID-1.png" alt="Second slide">
+            <img class="d-block w-100"  id="carouselworkprogress" src="img/Record-List-Tracker-1.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-2.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-2.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-3.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-3.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-4.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-4.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-5.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-5.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-6.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-6.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-7.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-7.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-8.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-8.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-9.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-10.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-10.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-11.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-11.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-12.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-13.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-14.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-15.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-16.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" id="carouselworkprogress" src="img/CID-17.png" alt="Second slide">
+            <img class="d-block w-100" id="carouselworkprogress" src="img/Record-List-Tracker-12.png" alt="Second slide">
           </div>
           <!-- Add more carousel items as needed -->
         </div>
-        <a class="carousel-control-prev" href="#workcid" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#workrecord" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#workcid" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#workrecord" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -605,41 +575,20 @@
 
           
           <div class="row mb-3">
-        <div class="col-md-3 d-flex justify-content-start">
-         <!-- Add a disabled and checked checkbox -->
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="checkbox1" checked >
-        <label class="form-check-label" for="checkbox1">
-          Design
-        </label>
+          <div class="col-md-auto d-flex justify-content-start">
+      <p class="text-white radius-1">HTML</p>
       </div>
+      <div class="col-md-auto d-flex justify-content-start">
+      <p class="text-white radius-2">CSS</p>
       </div>
-      <div class="col-md-3 d-flex justify-content-start">
-         <!-- Add a disabled and checked checkbox -->
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="checkbox1" checked >
-        <label class="form-check-label" for="checkbox1">
-          HTML
-        </label>
+      <div class="col-md-auto d-flex justify-content-start">
+      <p class="text-white radius-1">Javascript</p>
       </div>
+      <div class="col-md-auto d-flex justify-content-start">
+      <p class="text-white radius-2">PHP</p>
       </div>
-      <div class="col-md-3 d-flex justify-content-start">
-         <!-- Add a disabled and checked checkbox -->
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="checkbox1" checked >
-        <label class="form-check-label" for="checkbox1">
-          CSS
-        </label>
-      </div>
-      </div>
-      <div class="col-md-3 d-flex justify-content-start">
-         <!-- Add a disabled and checked checkbox -->
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="checkbox1" checked >
-        <label class="form-check-label" for="checkbox1">
-          Javascript
-        </label>
-      </div>
+      <div class="col-md-auto d-flex justify-content-start">
+      <p class="text-white radius-1">MySQL</p>
       </div>
       </div>
         </div>
