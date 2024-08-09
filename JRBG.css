@@ -64,11 +64,6 @@
     color: #F90164;
   }
 
-
-
-
- 
-
   ul {
     list-style: none;
     padding: 0;
@@ -230,9 +225,41 @@
     background-color: rgba(200, 234, 179, 0);
   }
 
+  .scroller {
+    width: auto;
+    height: 320px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
 
+  .scroller-1 {
+    width: auto;
+    height: 305px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
 
-   
+  .scroller-2 {
+    width: auto;
+    height: 310px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+
+  .scroller-3 {
+    width: auto;
+    height: 307px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+
+  .scroller-4 {
+    width: auto;
+    height: 390px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+
     .fade-in {
       opacity: 1; /* Fully visible when in viewport */
     }

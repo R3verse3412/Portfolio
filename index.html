@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="JRBG.css">
+  <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" style="border-radius: 20px;">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
@@ -62,10 +63,6 @@
       transition: transform 0.3s ease-in-out;
     }
 
-    .card-body {
-      padding: 20px;
-    }
-
     /* Hover scroll down effect */
     .hover-scroll::before {
       content: '↓';
@@ -86,14 +83,15 @@
     .hover-scroll {
       cursor: pointer;
     }
-    
+
+
 </style>
 
 <body class="body">
 
 <nav class="navbar navbar-expand-lg navbar-light fs-5 mb-5 navbar-transparent">
     <div class="container-fluid">
-      <p class="navbar-brand me-auto fs-10 text-white" href="Record_List_Page.php">Portfolio</p>
+      <p class="navbar-brand me-auto fs-10 text-white" href="Record_List_Page.php"><img src="img/favicon-32x32.png" alt="" style="border-radius: 20px;"></p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -117,7 +115,7 @@
     <div class="container">
       <div class="card-body header">
       <div class="row">
-  <div class="col d-flex">
+  <div class="col-md-auto">
     <span class="text-name letter">J</span>
     <span class="text-name letter">u</span>
     <span class="text-name letter">l</span>
@@ -338,9 +336,9 @@
         </a>
       </div>
     </div>
-    <div class="col-md-4 d-flex flex-column shadow work-project">
+    <div class="col-md-4 d-flex flex-column shadow work-project ">
       <div class="card card-work">
-        <div class="card-body ">
+        <div class="card-body scroller">
           <div class="card-title text-center fs-3">Japcha</div>
           <div class="card-text text-center mb-3">(CAPSTONE PROJECT)</div>
           <div class="lines mb-3"></div>
@@ -462,7 +460,7 @@
     </div>
     <div class="col-md-4 d-flex flex-column shadow work-project">
       <div class="card card-work">
-        <div class="card-body">
+        <div class="card-body scroller-1">
           <div class="card-title text-center fs-3">CID SYSTEM</div>
           <div class="card-text text-center mb-3">(OJT PROJECT)</div>
           <div class="lines mb-3"></div>
@@ -571,7 +569,7 @@
     </div>
     <div class="col-md-4 d-flex flex-column shadow work-project">
       <div class="card card-work">
-        <div class="card-body ">
+        <div class="card-body scroller-2">
           <div class="card-title text-center fs-3">Record List Tracker</div>
           <div class="card-text text-center mb-3">(MY PROJECT)</div>
           <div class="lines mb-3"></div>
@@ -636,7 +634,7 @@
     </div>
     <div class="col-md-4 d-flex flex-column shadow work-project">
       <div class="card card-work">
-        <div class="card-body ">
+        <div class="card-body scroller-3">
           <div class="card-title text-center fs-3">Portfolio</div>
           <div class="card-text text-center mb-3"></div>
           <div class="lines mb-3"></div>
@@ -711,7 +709,7 @@
     </div>
     <div class="col-md-4 d-flex flex-column shadow work-project">
       <div class="card card-work">
-        <div class="card-body ">
+        <div class="card-body scroller-4">
           <div class="card-title text-center fs-3">Krampus</div>
           <div class="card-text text-center mb-3">(GAME DEVELOPMENT)</div>
           <div class="lines mb-3"></div>
