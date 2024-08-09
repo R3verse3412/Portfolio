@@ -1,298 +1,406 @@
-.body{
+.body {
   font-family: Arial, sans-serif;
   background-color: #121212;
 }
 
-.section{
-    min-height: 110vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-    position: relative;
+.section {
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  position: relative;
 }
 
-.header{
-    width: 650px;
+.header {
+  width: 650px;
 }
 
-.img{
-    width: 500px;
+.img {
+  width: 500px;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  opacity: 0; /* Initially hide the element */
-  transition: opacity 1s ease-in-out; /* Smooth transition */
+  opacity: 0;
+  /* Initially hide the element */
+  transition: opacity 1s ease-in-out;
+  /* Smooth transition */
+}
+
+.card-skills {
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  background-color: #333333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-skills:hover {
+  transform: scale(1.1);
+}
+
+/* CSS */
+.letter {
+  color: #fff;
+  font-size: 3rem;
+  /* Adjust this size as needed */
+  margin-right: 5px;
+  /* Adjust this value for the desired spacing */
+  transition: transform 0.3s, color 0.3s;
+  /* Smooth transition for hover effects */
+}
+
+.letter:hover {
+  transform: scale(1.2);
+  /* Slightly enlarge the letter */
+  cursor: pointer;
+  /* Change cursor to pointer */
+  color: #F90164;
+}
+
+.icons svg {
+  transition: transform 0.3s ease;
+  /* Smooth transition for transform */
+}
+
+/* Scale up the icon slightly and change the cursor to pointer on hover */
+.icons svg:hover {
+  transform: scale(1.2);
+  /* Scale the icon up */
+  cursor: pointer;
+  /* Change cursor to pointer */
+  color: #F90164;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font: bold 1.5rem sans-serif;
+  text-transform: uppercase;
+  color: grey;
+}
+
+ul li {
+  padding: 0 .5em .25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+
+ul li:hover {
+  color: #fff;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0;
+  /* 3px = the thickness */
+  background: #F90164;
+  /* the color */
+  scale: 0 1;
+  transition: .3s, translate 0s .3s;
+}
+
+ul:hover li:before {
+  scale: 1;
+}
+
+ul li:hover:before {
+  translate: 0;
+  transition: .3s;
+}
+
+ul:hover li:has(~ li:hover):before {
+  translate: 100% 0;
+  transition: .2s .2s, scale 0s .4s;
+}
+
+ul:hover li:hover~li:before {
+  translate: -100% 0;
+  transition: .2s .2s, scale 0s .4s;
+}
+
+.radius-1 {
+  font-size: 12px;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  padding: 7px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.radius-2 {
+  font-size: 12px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 7px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.radius-3 {
+  font-size: 12px;
+  background-color: rgb(5, 128, 243);
+  border-radius: 10px;
+  padding: 7px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.radius-4 {
+  font-size: 12px;
+  background-color: rgb(243, 5, 5);
+  border-radius: 10px;
+  padding: 7px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.box {
+  padding: 5px;
+}
+
+.space {
+  padding: 5px;
+}
+
+.card-work {
+  padding: 20px;
+}
+
+.icons a {
+  color: white;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.1);
+}
+
+.git a {
+  color: black;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+/* Scale up the icon slightly and change the cursor to pointer on hover */
+.git a:hover {
+  transform: scale(1.1);
+  color: #F90164;
+}
+
+.summary {
+  font-size: 12px;
+}
+
+.footer {
+  height: 50px;
+  background-color: #333333;
+  align-items: center;
+}
+
+.lines {
+  border-top: 1px solid grey;
+  /* Black color for the horizontal line */
+  box-shadow: #343a40;
+}
+
+.card-color {
+  border-radius: 5%;
+  background-color: #333333;
+
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* Ensure navbar is always on top */
+  transition: top 0.5s;
+}
+
+.navbar-transparent {
+  background-color: rgba(200, 234, 179, 0);
+}
+
+.navbar-hidden {
+  top: -80px;
+  /* Adjust based on your navbar height */
+}
+
+.navbar:hover {
+  top: 0;
+}
+
+.donwload {
+  background-color: rgba(200, 234, 179, 0);
+  border-color: #F90164;
+}
+
+.donwload:hover {
+  background-color: rgba(200, 234, 179, 0);
+}
+
+.fade-in {
+  opacity: 1;
+  /* Fully visible when in viewport */
+}
+
+.card-color {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Hover scroll down effect */
+.hover-scroll::before {
+  content: '↓';
+  font-size: 24px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.hover-scroll:hover::before {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.hover-scroll {
+  cursor: pointer;
+}
+
+.card-color {
+  border-radius: 5%;
+  background-color: #333333;
+
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* Ensure navbar is always on top */
+  transition: top 0.5s;
+}
+
+.navbar-transparent {
+  background-color: rgba(200, 234, 179, 0);
+}
+
+.navbar-hidden {
+  top: -80px;
+  /* Adjust based on your navbar height */
+}
+
+.navbar:hover {
+  top: 0;
+}
+
+.collapse {
+  background-color: rgb(rgb(255, 255, 255));
+
+}
+
+.donwload {
+  background-color: rgba(200, 234, 179, 0);
+  border-color: #F90164;
+}
+
+.donwload:hover {
+  background-color: rgba(200, 234, 179, 0);
 }
 
 
-.card-skills{
-    align-items: center;
-    justify-content: center;
-    border-radius: 10%;
-    background-color: #333333;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .card-skills:hover{
-    transform: scale(1.1);
-  }
-
-  /* CSS */
-.letter {
-    color: #fff;
-    font-size: 3rem; /* Adjust this size as needed */
-    margin-right: 5px; /* Adjust this value for the desired spacing */
-    transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effects */
-  }
-  
-  .letter:hover {
-    transform: scale(1.2); /* Slightly enlarge the letter */
-    cursor: pointer; /* Change cursor to pointer */
-    color: #F90164;
-  }
-
-  .icons svg {
-    transition: transform 0.3s ease; /* Smooth transition for transform */
-  }
-  
-  /* Scale up the icon slightly and change the cursor to pointer on hover */
-  .icons svg:hover {
-    transform: scale(1.2); /* Scale the icon up */
-    cursor: pointer; /* Change cursor to pointer */
-    color: #F90164;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    font: bold 1.5rem sans-serif;
-    text-transform: uppercase;
-    color: grey;
-  }
-  ul li {
-    padding: 0 .5em .25em;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: .3s;
-  }
-  ul li:hover {
-    color: #fff;
-  }
-  ul li:before {
-    content: "";
-    position: absolute;
-    inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
-    background: #F90164; /* the color */
-    scale: 0 1;
-    transition: .3s, translate 0s .3s;
-  }
-  ul:hover li:before {
-    scale: 1;
-  }
-  ul li:hover:before {
-    translate: 0;
-    transition: .3s;
-  }
-  ul:hover li:has(~ li:hover):before {
-    translate: 100% 0;
-    transition: .2s .2s,scale 0s .4s;
-  }
-  ul:hover li:hover ~ li:before {
-    translate: -100% 0;
-    transition: .2s .2s,scale 0s .4s;
-  }
-
-  .radius-1{
-    font-size: 12px;
-    background-color: yellowgreen; 
-    border-radius: 10px; 
-    padding: 7px;
-    white-space: nowrap; /* Prevent text wrapping */
-  }
-
-  .radius-2{
-    font-size: 12px;
-    background-color: black; 
-    border-radius: 10px; 
-    padding: 7px;
-    white-space: nowrap; /* Prevent text wrapping */
-  }
-
-  .radius-3{
-    font-size: 12px;
-    background-color: rgb(5, 128, 243); 
-    border-radius: 10px; 
-    padding: 7px;
-    white-space: nowrap; /* Prevent text wrapping */
-  }
-
-  .radius-4{
-    font-size: 12px;
-    background-color: rgb(243, 5, 5); 
-    border-radius: 10px; 
-    padding: 7px;
-    white-space: nowrap; /* Prevent text wrapping */
-  }
+.fade-in {
+  opacity: 1;
+  /* Fully visible when in viewport */
+}
 
 
-  .box{
-    padding: 5px;
+/* Hover scroll down effect */
+.hover-scroll::before {
+  content: '↓';
+  font-size: 24px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.hover-scroll:hover::before {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.hover-scroll {
+  cursor: pointer;
+}
+
+.scroller {
+  width: auto;
+  height: 320px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.scroller-1 {
+  width: auto;
+  height: 305px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.scroller-2 {
+  width: auto;
+  height: 310px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.scroller-3 {
+  width: auto;
+  height: 307px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.scroller-4 {
+  width: auto;
+  height: 390px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
   }
 
-  .space{
-    padding: 5px;
+  .navbar-nav .nav-link {
+    color: black !important;
   }
-
-  .card-work{
-    padding: 20px;
-  }
-
-  .icons a {
-    color: white;
-    margin-right: 10px;
-    transition: transform 0.3s;
-  }
-
-  .icons a:hover {
-    transform: scale(1.1);
-  }
-
-  .git a {
-    color: black;
-    margin-right: 10px;
-    transition: transform 0.3s;
-  }
-  
-  /* Scale up the icon slightly and change the cursor to pointer on hover */
-  .git a:hover {
-    transform: scale(1.1);
-    color: #F90164;
-  }
-
-  .summary{
-    font-size: 12px;
-  }
-
-  .footer{
-    height: 50px;
-    background-color: #333333;
-    align-items: center;
-  }
-
-  .lines{
-    border-top: 1px solid grey;
-    /* Black color for the horizontal line */
-    box-shadow: #343a40;
-  }
-
-  .card-color{
-    border-radius: 5%;
-    background-color: #333333;
-    
-  }
-
-  .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000; /* Ensure navbar is always on top */
-    transition: top 0.5s;
-  }
-
-  .navbar-transparent {
-    background-color: rgba(200, 234, 179, 0);
-  }
-
-  .navbar-hidden {
-    top: -80px; /* Adjust based on your navbar height */
-  }
-
-  .navbar:hover {
-    top: 0;
-  }
-    
-  .donwload{
-    background-color: rgba(200, 234, 179, 0);
-    border-color:#F90164;
-  }
-
-  .donwload:hover{
-    background-color: rgba(200, 234, 179, 0);
-  }
-
-  .scroller {
-    width: auto;
-    height: 320px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-  }
-
-  .scroller-1 {
-    width: auto;
-    height: 305px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-  }
-
-  .scroller-2 {
-    width: auto;
-    height: 310px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-  }
-
-  .scroller-3 {
-    width: auto;
-    height: 307px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-  }
-
-  .scroller-4 {
-    width: auto;
-    height: 390px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-  }
-
-    .fade-in {
-      opacity: 1; /* Fully visible when in viewport */
-    }
-
- 
-    .card-color {
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
-    /* Hover scroll down effect */
-    .hover-scroll::before {
-      content: '↓';
-      font-size: 24px;
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      transition: opacity 0.3s, bottom 0.3s;
-    }
-
-    .hover-scroll:hover::before {
-      bottom: 20px;
-      opacity: 1;
-    }
-
-    .hover-scroll {
-      cursor: pointer;
-    }
+}
