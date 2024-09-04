@@ -12,9 +12,6 @@
   position: relative;
 }
 
-.header {
-  width: 650px;
-}
 
 .img {
   width: 500px;
@@ -363,16 +360,3 @@ ul:hover li:hover~li:before {
   scrollbar-width: thin;
 }
 
-
-
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  .navbar-nav .nav-link {
-    color: black !important;
-  }
-}
