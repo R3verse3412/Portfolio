@@ -360,3 +360,12 @@ ul:hover li:hover~li:before {
   scrollbar-width: thin;
 }
 
+@media (max-width: 768px){
+      .radius-1, .radius-2, .radius-3, .radius-4{
+        display: none;
+      }
+
+      .text{
+        display: none;
+      }
+}
