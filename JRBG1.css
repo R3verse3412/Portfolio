@@ -28,3 +28,8 @@
 .donwload:hover {
   background-color: rgba(200, 234, 179, 0);
 }
+
+.Development{
+  font-size: 12px;
+  color: gray;
+}
