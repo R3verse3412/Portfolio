@@ -6,6 +6,7 @@
 .section {
   min-height: 110vh;
   display: flex;
+  flex-direction: column; /* Stack items vertically */
   justify-content: center;
   align-items: center;
   padding: 60px 0;
